@@ -4,6 +4,12 @@ os:
 dist: xenial
 python:
 - '3.8'
+notifications:
+  email:
+    recipients:
+    - ashikkumar23@gmail.com
+    on_success: always
+    on_failure: always
 install:
 - pip install -r tests/requirements.txt
 script:
