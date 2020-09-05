@@ -10,6 +10,9 @@ notifications:
     - ashikkumar23@gmail.com
     on_success: always
     on_failure: always
+branches:
+  only:
+  - master
 install:
 - pip install -r tests/requirements.txt
 script:
