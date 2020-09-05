@@ -1,0 +1,7 @@
+language: python
+python:
+ - "3.8"
+install:
+ - pip install -r tests/requirements.txt
+script:
+ - pytest -vv --gherkin-terminal-reporter --reruns 1 --reruns-delay 1 --tags="automated"
