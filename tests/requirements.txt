@@ -1,0 +1,6 @@
+pylint
+pytest
+pytest-bdd
+pytest-rerunfailures
+PyYAML
+requests
