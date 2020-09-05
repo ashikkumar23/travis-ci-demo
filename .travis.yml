@@ -1,20 +1,20 @@
 language: python
 os:
-- linux
+  - linux
 dist: xenial
 python:
-- '3.8'
+  - '3.8'
 notifications:
   email:
     recipients:
-    - ashikkumar23@gmail.com
+      - ashikkumar23@gmail.com
     on_success: always
     on_failure: always
 branches:
   only:
-  - master
+    - master
 install:
-- pip install -r tests/requirements.txt
+  - pip install -r tests/requirements.txt
 script:
-- cd tests
-- pytest -vv --gherkin-terminal-reporter --reruns 1 --reruns-delay 1 --tags="automated"
+  - cd tests
+  - pytest -vv --gherkin-terminal-reporter --reruns 1 --reruns-delay 1 --tags="automated"
